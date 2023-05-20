@@ -79,15 +79,28 @@ export const StylesOuterCircle = styled.div`
   align-items: center;
   align-content: center;
   transition: transform 0.3s;
+  cursor: pointer;
 
-  &:hover {
-    background: #d6d3d3;
-    mix-blend-mode: normal;
-    transform: scale(1.2);
-    visibility: visible;
-    opacity: 0.1;
+  :hover::before {
+    width: 270px;
+    height: 270px;
+    content: "";
+    border-radius: 60%;
+    position: absolute;
+    animation: hoverExplore 0.3s forwards;
+  }
+
+  @keyframes hoverExplore {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+      border: 40px solid white;
+    }
   }
 `;
+
 export const StylesSpace = styled.div`
   width: 100%;
   display: flex;
