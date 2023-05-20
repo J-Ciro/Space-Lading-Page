@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../../assets/shared/logo.svg";
+import { NavLink } from "react-router-dom";
 import { StyledLine, StyledList, StyledNav } from "./StyleNavbar";
 
 export const NavBar = () => {
@@ -13,16 +14,26 @@ export const NavBar = () => {
       <StyledList>
         <ul>
           <li>
-            00 <span>HOME</span>
+            <NavLink to="/">
+              {" "}
+              00 <span>HOME</span>
+            </NavLink>
           </li>
           <li>
-            01 <span>DESTINATION</span>
+            <NavLink to="/destination">
+              01 <span>DESTINATION</span>
+            </NavLink>
           </li>
           <li>
-            02 <span>CREW</span>
+            <NavLink to="/crew">
+              {" "}
+              02 <span>CREW</span>
+            </NavLink>
           </li>
           <li>
-            03 <span>TECHNOLOGY</span>
+            <NavLink to="/technology">
+              03 <span>TECHNOLOGY</span>
+            </NavLink>
           </li>
         </ul>
       </StyledList>

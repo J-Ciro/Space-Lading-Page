@@ -29,6 +29,10 @@ export const StyledList = styled.div`
     border-bottom: 2px solid transparent;
     font-weight: 700;
     letter-spacing: 2.7px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
     span {
       font-family: "Barlow Condensed", sans-serif;
