@@ -1,5 +1,11 @@
 import React from "react";
-import { SectionContent, Message1, MessageSpace, Message2 } from "./StyleHome";
+import {
+  SectionContent,
+  Message1,
+  MessageSpace,
+  Message2,
+  StylesOuterCircle,
+} from "./StyleHome";
 import { StylesHome } from "./StyleHome";
 import { StylesDivExplore } from "./StyleHome";
 import { StylesSpace } from "./StyleHome";
@@ -21,8 +27,11 @@ export const Home = () => {
                 of this world experience!
               </Message2>
             </div>
-
-            <StylesDivExplore>EXPLORE</StylesDivExplore>
+            <div>
+              <StylesOuterCircle>
+                <StylesDivExplore>EXPLORE</StylesDivExplore>
+              </StylesOuterCircle>
+            </div>
           </StylesSpace>
         </SectionContent>
       </StylesHome>

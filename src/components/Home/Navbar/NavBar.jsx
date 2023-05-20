@@ -12,10 +12,18 @@ export const NavBar = () => {
 
       <StyledList>
         <ul>
-          <li>00 HOME</li>
-          <li>01 DESTINATION</li>
-          <li>02 CREW</li>
-          <li>03 TECHNOLOGY</li>
+          <li>
+            00 <span>HOME</span>
+          </li>
+          <li>
+            01 <span>DESTINATION</span>
+          </li>
+          <li>
+            02 <span>CREW</span>
+          </li>
+          <li>
+            03 <span>TECHNOLOGY</span>
+          </li>
         </ul>
       </StyledList>
     </StyledNav>
