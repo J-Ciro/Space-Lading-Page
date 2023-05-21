@@ -58,7 +58,7 @@ export const StyledNav = styled.nav`
   position: absolute;
   width: 95vw;
   height: 96px;
-  left: 55px;
+  left: 5vw;
   top: 40px;
 `;
 

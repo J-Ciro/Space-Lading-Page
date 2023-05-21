@@ -9,11 +9,12 @@ import {
 import { StylesHome } from "./StyleHome";
 import { StylesDivExplore } from "./StyleHome";
 import { StylesSpace } from "./StyleHome";
+import indexBackground from "../../assets/home/background-home-desktop.jpg";
 
 export const Home = () => {
   return (
     <>
-      <StylesHome>
+      <StylesHome backgroundImage={indexBackground}>
         <SectionContent>
           <StylesSpace>
             <div>

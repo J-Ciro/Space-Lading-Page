@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import indexBackground from "../../assets/home/background-home-desktop.jpg";
 
 export const SectionContent = styled.main`
   width: 100%;
@@ -42,7 +41,7 @@ export const MessageSpace = styled.h1`
 
 export const StylesHome = styled.div`
   display: flex;
-  background-image: url(${indexBackground});
+  background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
