@@ -16,9 +16,36 @@ export const StyledList = styled.div`
     gap: 2.5rem;
     font-family: "Barlow Condensed", sans-serif;
     color: #ffff;
+    height: 100%;
+    align-items: center;
+    box-sizing: border-box;
   }
   li {
     list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    span {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 2.7px;
+      box-sizing: border-box;
+      font-weight: 400;
+    }
+    &:hover {
+      border-bottom: solid 3px #ffff;
+      mix-blend-mode: normal;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -31,7 +58,7 @@ export const StyledNav = styled.nav`
   position: absolute;
   width: 95vw;
   height: 96px;
-  left: 55px;
+  left: 5vw;
   top: 40px;
 `;
 

@@ -13,10 +13,28 @@ export const NavBar = () => {
 
       <StyledList>
         <ul>
-          <li><NavLink to="/">00 HOME</NavLink></li>
-          <li><NavLink to="/destination">01 DESTINATION</NavLink></li>
-          <li><NavLink to="/crew">02 CREW</NavLink></li>
-          <li><NavLink to="/technology">03 TECHNOLOGY</NavLink></li>
+          <li>
+            <NavLink to="/">
+              {" "}
+              00 <span>HOME</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/destination">
+              01 <span>DESTINATION</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/crew">
+              {" "}
+              02 <span>CREW</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/technology">
+              03 <span>TECHNOLOGY</span>
+            </NavLink>
+          </li>
         </ul>
       </StyledList>
     </StyledNav>
