@@ -21,7 +21,7 @@
 
 import React, { useState } from "react";
 import { NavBar } from "../Home/Navbar/NavBar";
-import { crew } from "../../Data/data.js";
+import { crew } from "../../Data/data";
 import styled from "styled-components";
 import { StylesCrew, ContentText, Slider, SliderItem, ImgCrew, RolePerson, NamePerson, BioPerson, DivBtnSlider, Btn, MeetCrew, DivMeetCrew, CarouselContainer } from "./StyleCrew";
 
