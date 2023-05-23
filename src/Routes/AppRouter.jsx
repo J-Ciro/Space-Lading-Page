@@ -15,7 +15,7 @@ const AppRouter = () => {
           <Route path="/" element={<Home />} />
           <Route path="destination" Component={Destination} />
           <Route path="crew" Component={Crew} />
-          <Route path="technology" Component={Technology} />
+          <Route path="technology" element={<Technology />} />
           <Route path="/" element={<Navigate to="/Home" />} />
         </Route>
         <Route path="*" Component={NotFound} />
