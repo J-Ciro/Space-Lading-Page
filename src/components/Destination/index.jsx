@@ -1,10 +1,12 @@
 import React from "react";
 import { StylesDestination } from "./StyleDestination";
 import { destinations } from "../../Data/data";
+import { NavBar } from "../Home/Navbar/NavBar";
+import { ImgCrew } from "../Crew/StyleCrew";
 
 
 export const Destination = () => {
-  console.log(destinations);
+  
   return (
     <StylesDestination>
       <div className="titleDestination">
