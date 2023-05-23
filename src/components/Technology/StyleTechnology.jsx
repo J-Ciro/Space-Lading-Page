@@ -9,12 +9,19 @@ export const StyledPageName = styled.div`
   }
 `;
 
-export const StyledSteps = styled.span`
+ export const PageTitle = ({ number, pageName }) => {
+  return (
+    <StyledPageTitle>
+      <StyledSpanNumber>{number}</StyledSpanNumber>
+      <StyledSpanPage>{pageName}</StyledSpanPage>
+    </StyledPageTitle>
+  );
+};
+
+export const StyledSteps = styled.button`
   width: 3em;
   height: 3em;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
   font-size: 1.5rem;
   font-weight: 400;
@@ -23,15 +30,18 @@ export const StyledSteps = styled.span`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Bellefair";
+  color: ${({ active }) => (active ? "black" : "white")};
+background-color: ${({ active }) => (active ? "white" : "transparent")};
+  
   &:hover {
-    color: #0b0d17;
-    background-color: white;
-    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255);
+    cursor:pointer;
   }
 `;
 
 export const StylesMainText = styled.section`
-  display: flex;
+display: ${({ active }) => (active ? "flex" : "none")};
   flex-direction: column;
   align-items: flex-start;
   gap: 50px;
@@ -79,6 +89,8 @@ export const StyledHeading3 = styled.h3`
   color: white;
   font-weight: 400;
   font-family: "Bellefair";
+  text-transform: uppercase;
+  width:9.3em;
 `;
 
 export const StyledTerm = styled.span`
@@ -103,8 +115,9 @@ export const StyledSpanPage = styled.span`
 `;
 
 export const StyledSectionPictures = styled.section`
-  position: absolute;
-  right: 0;
+position: absolute;
+right: 0px;
+top: 12vw;
 `;
 
 export const StyledSpanNumber = styled.span`
@@ -113,4 +126,15 @@ export const StyledSpanNumber = styled.span`
   opacity: 0.25;
   font-family: "Barlow Condensed";
   font-weight: 700;
+`;
+
+export const StyledMainContent = styled.div`
+display:flex;
+flex-direction:column;
+gap:20px;
+`
+
+export const ColorNumber = styled.div`
+
+
 `;
