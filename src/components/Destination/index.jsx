@@ -1,31 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import { StylesDestination } from "./StyleDestination";
 import { destinations } from "../../Data/data";
 import { NavBar } from "../Home/Navbar/NavBar";
 import { ImgCrew } from "../Crew/StyleCrew";
-
+import {
+  PageTitle,
+  StyledHeading3,
+  StyledMainContent,
+  StyledMainText,
+  StyledPageName,
+  StyledTerm,
+} from "../Technology/StyleTechnology";
+import { SectionContent, StylesHome, StylesSpace } from "../Home/StyleHome";
+import BackgrouDestination from "../../assets/destination/background-destination-desktop.jpg";
 
 export const Destination = () => {
-  
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleMenuClick = (option) => {
+    console.log(option);
+    setSelectedOption(option);
+  };
+
   return (
-    <StylesDestination>
-      <div className="titleDestination">
+    <StylesHome backgroundImage={BackgrouDestination}>
+      <StylesDestination>
+        <SectionContent>
+          <StylesSpace>
+            <StyledPageName>
+              <PageTitle number="01" pageName="PICK YOUR DESTINATION" />
+            </StyledPageName>
+            <div>
+              <nav className="navPlanetas">
+                <ul>
+                  {destinations.map((destination) => {
+                    return (
+                      <li  onClick={() => handleMenuClick(destination.name)}>
+                        <span>{destination.name}</span>
+                      </li>
+                    )
+                  })
+                  }
+                </ul>
+              </nav>
+
+              {selectedOption &&
+                destinations.map((destination) => {
+                  if (destination.name === selectedOption) {
+                    return(
+                      <div className="infoDestination">
+                        <figure>
+                          <img src={destination.images.png} alt=""/>
+                        </figure>
+                        <div>
+                          <h2>{destination.name}</h2>
+                          <p>{destination.description}</p>
+                          <br />
+                          <hr />
+                          <br />
+                          <div>
+                            <div>
+                              <h4>AVG. DISTANCE</h4>
+                              <h2>{destination.distance}</h2>
+                            </div>
+                            <div>
+                              <h4>Est. travel time</h4>
+                              <h2>{destination.travel}</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  }
+                  return null;
+
+                })}
+            </div>
+
+
+            {/* <StyledMainContent>
+              <StyledTerm>THE TERMINOLOGY</StyledTerm>
+              <StyledHeading3>{"tech.name"}</StyledHeading3>
+              <StyledMainText>{"tech.description"}</StyledMainText>
+            </StyledMainContent> */}
+          </StylesSpace>
+        </SectionContent>
+      </StylesDestination>
+
+      {/* <div className="titleDestination">
         <span className="titleNumber">01</span>
         <span className="title">PICK YOUR DESTINATION</span>
-      </div>
-      <nav className="navPlanetas">
-        <ul>
-          {destinations.map((destination, index) => {
-            return (
-              <li key={index}>
-                <a href={destination.link}>{destination.name}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    </StylesDestination>
-  )
-
-
+      </div> */}
+      
+    </StylesHome>
+  );
 };

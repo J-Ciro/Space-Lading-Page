@@ -10,6 +10,7 @@ import anoushehMovil from '../assets/crew/image-anousheh-ansari.webp'
 import launchVehiclePortrait from '../assets/technology/image-launch-vehicle-portrait.jpg'
 import spacePortPortrait from '../assets/technology/image-spaceport-portrait.jpg'
 import spaceCapsule from '../assets/technology/image-space-capsule-portrait.jpg'
+
 export const destinations = 
 
     [

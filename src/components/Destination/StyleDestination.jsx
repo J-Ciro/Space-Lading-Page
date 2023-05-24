@@ -1,15 +1,7 @@
 import { styled } from "styled-components";
-import BackgrouDestination from "../../assets/destination/background-destination-desktop.jpg";
+
 
 export const StylesDestination = styled.div`
-  background-image: url(${BackgrouDestination});
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  font-family: "Barlow Condensed";
   .titleDestination {
     position: absolute;
     position: absolute;
@@ -59,7 +51,7 @@ export const StylesDestination = styled.div`
   .navPlanetas {
     position: absolute;
     right: 21.3%;
-    bottom: 55%;
+    bottom: 65%;
     display: flex;
     ul {
       display: flex;
@@ -75,14 +67,20 @@ export const StylesDestination = styled.div`
         cursor: pointer;
         color: #d0d6f9;
         :hover {
-          &:hover {
             border-bottom: solid 3px #ffff;
             mix-blend-mode: normal;
             padding-bottom: 7px;
             cursor: pointer;
-          }
         }
       }
     }
+  }
+  .infoDestination{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Barlow Condensed";
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
   }
 `;
