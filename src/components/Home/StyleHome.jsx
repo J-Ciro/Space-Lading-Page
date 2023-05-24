@@ -44,8 +44,21 @@ export const StylesHome = styled.div`
   background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  @media screen and (max-width: 768px){
+    background-image: url(${(props) => props.backgroundImageTablet});
+    background-repeat: no-repeat;
+    width:auto;
+    height:auto;
+  }
+  @media screen and (max-width: 425px){
+    background-image: url(${(props) => props.backgroundImageMobile});
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
 `;
 
 export const StylesDivExplore = styled.span`
@@ -108,4 +121,13 @@ export const StylesSpace = styled.div`
   margin-top: 7.5rem;
   margin-left: 5rem;
   margin-right: 5rem;
+
+  @media screen and (max-width: 768px){
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left:0px;
+    margin-right: 0px;
+  }
+
 `;
