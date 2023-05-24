@@ -50,12 +50,14 @@ export const StylesHome = styled.div`
     background-image: url(${(props) => props.backgroundImageTablet});
     background-repeat: no-repeat;
     width:auto;
-    height:auto;
+   
   }
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 426px){
     background-image: url(${(props) => props.backgroundImageMobile});
     background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
+    height:auto;
+  
   }
 
 

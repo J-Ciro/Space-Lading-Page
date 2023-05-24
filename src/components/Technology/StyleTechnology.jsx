@@ -122,6 +122,9 @@ export const StyledMainText = styled.p`
   @media screen and (max-width: 426px){
    font-size: 0.938rem;
    font-weight: 400;
+   gap:5vh;
+   width:327px;
+   /* height:175px; */
  }   
 `;
 
@@ -237,6 +240,10 @@ export const StyledMain = styled.div`
   flex-direction: column-reverse;
   align-items: center;
   gap:50px;
+}
+
+@media screen and (max-width: 426px){
+  gap:30px;
 }
 
 `
