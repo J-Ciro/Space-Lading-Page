@@ -10,11 +10,13 @@ import { StylesHome } from "./StyleHome";
 import { StylesDivExplore } from "./StyleHome";
 import { StylesSpace } from "./StyleHome";
 import indexBackground from "../../assets/home/background-home-desktop.jpg";
+import indexBackgroundTablet from "../../assets/home/background-home-tablet.jpg"
+import indexBackgroundPhone from "../../assets/home/background-home-mobile.jpg"
 
 export const Home = () => {
   return (
     <>
-      <StylesHome backgroundImage={indexBackground}>
+      <StylesHome backgroundImage={indexBackground} backgroundImageTablet={indexBackgroundTablet} backgroundImageMobile={indexBackgroundPhone}>
         <SectionContent>
           <StylesSpace>
             <div>
