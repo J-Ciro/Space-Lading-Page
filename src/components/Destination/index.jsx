@@ -15,7 +15,7 @@ import { SectionContent, StylesHome, StylesSpace } from "../Home/StyleHome";
 import BackgrouDestination from "../../assets/destination/background-destination-desktop.jpg";
 
 export const Destination = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("Moon");
 
   const handleMenuClick = (option) => {
     console.log(option);
@@ -31,34 +31,32 @@ export const Destination = () => {
               <PageTitle number="01" pageName="PICK YOUR DESTINATION" />
             </StyledPageName>
             <div>
-              <nav className="navPlanetas">
-                <ul>
-                  {destinations.map((destination) => {
-                    return (
-                      <li  onClick={() => handleMenuClick(destination.name)}>
-                        <span>{destination.name}</span>
-                      </li>
-                    )
-                  })
-                  }
-                </ul>
-              </nav>
 
               {selectedOption &&
                 destinations.map((destination) => {
                   if (destination.name === selectedOption) {
-                    return(
+                    return (
                       <div className="infoDestination">
                         <figure>
-                          <img src={destination.images.png} alt=""/>
+                          <img src={destination.images.png} alt={destination.name} />
                         </figure>
-                        <div>
-                          <h2>{destination.name}</h2>
-                          <p>{destination.description}</p>
-                          <br />
+                        <div className="informacionPlaneta">
+                          <nav className="navPlanetas">
+                            <ul>
+                              {destinations.map((destination) => {
+                                return (
+                                  <li onClick={() => handleMenuClick(destination.name)}>
+                                    <span>{destination.name}</span>
+                                  </li>
+                                )
+                              })
+                              }
+                            </ul>
+                          </nav>
+                          <h2 className="title">{destination.name}</h2>
+                          <p className="description">{destination.description}</p>
                           <hr />
-                          <br />
-                          <div>
+                          <div className="distanciaTiempo">
                             <div>
                               <h4>AVG. DISTANCE</h4>
                               <h2>{destination.distance}</h2>
@@ -72,10 +70,13 @@ export const Destination = () => {
                       </div>
                     )
                   }
-                  return null;
+
 
                 })}
             </div>
+
+
+
 
 
             {/* <StyledMainContent>
@@ -91,7 +92,7 @@ export const Destination = () => {
         <span className="titleNumber">01</span>
         <span className="title">PICK YOUR DESTINATION</span>
       </div> */}
-      
+
     </StylesHome>
   );
 };

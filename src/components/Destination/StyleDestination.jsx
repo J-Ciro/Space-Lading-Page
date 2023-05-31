@@ -48,11 +48,27 @@ export const StylesDestination = styled.div`
       color: #ffffff;
     }
   }
-  .navPlanetas {
-    position: absolute;
-    right: 21.3%;
-    bottom: 65%;
+
+  .infoDestination{
     display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Barlow Condensed";
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
+    img{
+      width: 360px;
+    }
+
+    .informacionPlaneta{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 35%;
+
+      .navPlanetas {
     ul {
       display: flex;
       gap: 20px;
@@ -75,12 +91,30 @@ export const StylesDestination = styled.div`
       }
     }
   }
-  .infoDestination{
-    display: flex;
-    justify-content: space-between;
-    font-family: "Barlow Condensed";
-    position: absolute;
-    top: 40%;
-    color: #ffffff;
+  .title{
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 100px;
+line-height: 115px;
+color: #FFFFFF;
+  }
+  .description{
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 200;
+font-size: 18px;
+line-height: 32px;
+color: #D0D6F9;
+
+  }
+    }
+
+
+    .distanciaTiempo{
+      display: flex;
+      justify-content: space-between
+      ;
+    }
   }
 `;
