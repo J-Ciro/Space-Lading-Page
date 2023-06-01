@@ -13,8 +13,16 @@ export const StylesDestination = styled.div`
     top: 35%;
     color: #ffffff;
     img {
-      width: 360px;
-      margin: 15% 0% 0% 40%;
+      width: 400px;
+      display: flex;
+      margin: 0% 0% 0% 40%;
+      @media screen and (max-width:1260px) {
+        margin: 0% 0% 0% 10%;
+      }
+      @media screen and (max-width:890px) {
+        margin: 0% 0% 0% -20%;
+      }
+      
     }
 
     .informacionPlaneta {
