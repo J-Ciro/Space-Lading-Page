@@ -50,31 +50,32 @@ export const StylesDestination = styled.div`
   .infoDestination{
     display: flex;
     width: 90%;
-    
     justify-content: space-between;
     align-items: center;
     font-family: "Barlow Condensed";
     position: absolute;
-    top: 30%;
+    top: 35%;
     color: #ffffff;
     img{
       width: 360px;
-      margin-left: 40%;
+      margin: 15% 0% 0% 40%;
     }
 
     .informacionPlaneta{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 28%;
+     
+      width: 35%;
       margin-right: 7%;
 
       hr{
+        border: 0.1mm solid #686868;
         margin: 8% 0% 4% 0% ;
       }
       .navPlanetas {
         display: flex;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     ul {
       display: flex;
       gap: 20px;
@@ -88,13 +89,15 @@ export const StylesDestination = styled.div`
         letter-spacing: 2.7px;
         cursor: pointer;
         color: #d0d6f9;
+        
         :hover {
-            border-bottom: solid 3px #ffff;
+            border-bottom: solid 3px #878787;
             mix-blend-mode: normal;
             padding-bottom: 7px;
             cursor: pointer;
         }
       }
+      
     }
   }
   .title{
@@ -106,22 +109,38 @@ export const StylesDestination = styled.div`
     color: #FFFFFF;
   }
   .description{
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-style: normal;
-    font-weight: 400;
+
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0.5px;
+    
     color: #D0D6F9;
 
   }
     }
-
-
     .distanciaTiempo{
       display: flex;
-      justify-content: space-between
-      ;
+      gap: 30%;
+      h4{
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: #D0D6F9;
+      }
+      h2{
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
     }
   }
 `;
