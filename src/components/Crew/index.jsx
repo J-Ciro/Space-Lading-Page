@@ -77,7 +77,7 @@
 
 import React, { useState } from "react";
 import { NavBar } from "../Home/Navbar/NavBar";
-import { crew } from "../../Data/data.js";
+import { crew } from "../../Data/data";
 import styled from "styled-components";
 import {
   StylesCrew,
