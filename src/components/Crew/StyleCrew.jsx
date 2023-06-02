@@ -312,6 +312,7 @@ export const DivMeetCrew = styled.div`
   }
   @media screen and (max-width: 426px) {
     position: absolute;
+    top:20%;
     transform: translateY(-600px);
     z-index: 200;
   }
