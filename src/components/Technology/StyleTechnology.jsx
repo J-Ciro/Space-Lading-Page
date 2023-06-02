@@ -228,9 +228,10 @@ export const StyledMainContent = styled.div`
 display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    //align-items: center;
 @media screen and (max-width: 768px){
   text-align: center;
+  align-items: center;
 }
 `
 
