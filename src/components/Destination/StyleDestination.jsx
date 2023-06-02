@@ -16,13 +16,28 @@ export const StylesDestination = styled.div`
       width: 400px;
       display: flex;
       margin: 0% 0% 0% 40%;
+      opacity: 0;
+      transform: translateY(-50%);
+      transform: translateX(-100%);
+      animation: aparecer 1s forwards;
       @media screen and (max-width:1260px) {
         margin: 0% 0% 0% 10%;
       }
       @media screen and (max-width:890px) {
         margin: 0% 0% 0% -20%;
       }
-      
+      @keyframes aparecer {
+      0%{
+        opacity: 0;
+        transform: translateY(-50%);
+        transform: translateX(-100%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+    }
     }
 
     .informacionPlaneta {
