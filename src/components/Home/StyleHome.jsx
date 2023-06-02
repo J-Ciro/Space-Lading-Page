@@ -185,10 +185,10 @@ export const StylesSpace = styled.div`
     margin-right: 0px;
 
     & div{
-      justify-content: center;
+      /* justify-content: center;
       align-items: center;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 30px; */
     }
   }
 
