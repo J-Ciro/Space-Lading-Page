@@ -71,15 +71,17 @@ export const ImgCrew = styled.figure`
 
   img {
     width: 400px;
-    @media screen and (max-width: 426px) {
-      width: 320px;
-      transform: translateX(-20px);
-      /* overflow: hidden;
-   height: 40%; */
-    }
+
     @media screen and (max-width: 768px) {
       /* width:380px; */
       transform: translateX(-20px);
+    }
+
+    @media screen and (max-width: 426px) {
+      width: 70%;
+      height: auto;
+      object-fit: contain;
+      transform: translate(0px, -0px);
     }
   }
 
@@ -91,17 +93,12 @@ export const ImgCrew = styled.figure`
     transform: translateY(-60px);
   }
   @media screen and (max-width: 426px) {
-    /* position: absolute;
-    width: 177.12px;
-    left: 98.62px;
-    top: 200px;
-    width: 55%; */
     margin: 100px;
-    width: 70%;
-    /* height: 100%;
-    overflow: hidden; */
+    width: 450px;
     overflow: hidden;
-    height: 430px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -121,6 +118,9 @@ export const Slider = styled.div`
     height: auto;
   }
   @media screen and (max-width: 426px) {
+    height: 600px;
+    margin-top: 380px;
+    margin-bottom: 0;
   }
 `;
 
@@ -312,7 +312,6 @@ export const DivMeetCrew = styled.div`
   }
   @media screen and (max-width: 426px) {
     position: absolute;
-    left: 30%;
     transform: translateY(-600px);
     z-index: 200;
   }
