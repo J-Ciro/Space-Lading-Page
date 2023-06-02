@@ -137,6 +137,7 @@ export const StylesDestination = styled.div`
       top: 25%;
       display: flex;
       flex-direction: column;
+      transform: translateY(40px);
      
 
       img {

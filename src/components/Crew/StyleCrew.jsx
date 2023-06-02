@@ -58,6 +58,10 @@ export const ContentText = styled.div`
   }
   @media screen and (max-width: 426px) {
     transform: translateY(-170px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 

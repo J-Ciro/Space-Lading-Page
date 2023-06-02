@@ -15,6 +15,8 @@ export const SectionContent = styled.main`
     justify-content: center;
     margin-top: 30px;
     flex-direction: column;
+    width:100vw;
+   
   }
 `;
 
@@ -59,9 +61,12 @@ export const Message2 = styled.p`
   }
 
   @media screen and (max-width: 426px){
-    font-size: 20px;
+    /* font-size: 20px; */
     margin-top: 20px;
-    width: 450px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: 400;
+    
   }
 `;
 
@@ -106,7 +111,7 @@ export const StylesHome = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    width: 500px;
+    /* width: 500px; */
   }
 
 
