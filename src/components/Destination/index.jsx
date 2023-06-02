@@ -21,57 +21,57 @@ export const Destination = () => {
             <StyledPageName>
               <PageTitle number="01" pageName="PICK YOUR DESTINATION" />
             </StyledPageName>
-            <div>
 
-              {selectedOption &&
-                destinations.map((destination) => {
-                  if (destination.name === selectedOption) {
-                    return (
-                      <div className="infoDestination">
-                        <figure>
-                          <img src={destination.images.png} alt={destination.name} />
-                        </figure>
-                        <div className="informacionPlaneta">
-                          <nav className="navPlanetas">
-                            <ul>
-                              {destinations.map((destination, index) => {
-                                return (
-                                  <li onClick={() => handleMenuClick(destination.name, index)}
-                                    style={{
-                                      borderBottom: selectedOptionColor === index ? '3px solid #fff' : 'none',
-                                      paddingBottom: '7px',
-                                    }}
-                                   //className={selectedOptionColor === index ? 'optionSelected' : ''}
-                                    >
-                                      
-                                    <span>{destination.name}</span>
-                                  </li>
-                                )
-                              })
-                              }
-                            </ul>
-                          </nav>
-                          <h2 className="title">{destination.name}</h2>
-                          <p className="description">{destination.description}</p>
-                          <hr />
-                          <div className="distanciaTiempo">
-                            <div>
-                              <h4>AVG. DISTANCE</h4>
-                              <h2>{destination.distance}</h2>
-                            </div>
-                            <div>
-                              <h4>Est. travel time</h4>
-                              <h2>{destination.travel}</h2>
-                            </div>
+
+            {selectedOption &&
+              destinations.map((destination) => {
+                if (destination.name === selectedOption) {
+                  return (
+                    <div className="infoDestination">
+                      <figure>
+                        <img src={destination.images.png} alt={destination.name} />
+                      </figure>
+                      <div className="informacionPlaneta">
+                        <nav className="navPlanetas">
+                          <ul>
+                            {destinations.map((destination, index) => {
+                              return (
+                                <li onClick={() => handleMenuClick(destination.name, index)}
+                                  style={{
+                                    borderBottom: selectedOptionColor === index ? '3px solid #fff' : 'none',
+                                    paddingBottom: '7px',
+                                  }}
+                                //className={selectedOptionColor === index ? 'optionSelected' : ''}
+                                >
+
+                                  <span>{destination.name}</span>
+                                </li>
+                              )
+                            })
+                            }
+                          </ul>
+                        </nav>
+                        <h2 className="title">{destination.name}</h2>
+                        <p className="description">{destination.description}</p>
+                        <hr />
+                        <div className="distanciaTiempo">
+                          <div className="distancia">
+                            <h4 >AVG. DISTANCE</h4>
+                            <h2>{destination.distance}</h2>
+                          </div>
+                          <div>
+                            <h4>Est. travel time</h4>
+                            <h2>{destination.travel}</h2>
                           </div>
                         </div>
                       </div>
-                    )
-                  }
-                  return null;
+                    </div>
+                  )
+                }
+                return null;
 
-                })}
-            </div>
+              })}
+
 
 
 
