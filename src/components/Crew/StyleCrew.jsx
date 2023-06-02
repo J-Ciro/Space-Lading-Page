@@ -308,7 +308,8 @@ export const DivMeetCrew = styled.div`
   }
   @media screen and (max-width: 426px) {
     position: absolute;
-    transform: translateY(-630px);
+    left: 30%;
+    transform: translateY(-600px);
     z-index: 200;
   }
 `;
