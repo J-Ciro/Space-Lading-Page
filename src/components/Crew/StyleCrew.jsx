@@ -311,7 +311,7 @@ export const DivMeetCrew = styled.div`
     margin-bottom: 0;
   }
   @media screen and (max-width: 426px) {
-    position: absolute;
+    /* position: absolute; */
     left: 30%;
     transform: translateY(-600px);
     z-index: 200;
