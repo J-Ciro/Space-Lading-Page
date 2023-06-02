@@ -315,6 +315,7 @@ export const DivMeetCrew = styled.div`
     top:20%;
     transform: translateY(-600px);
     z-index: 200;
+    margin-bottom: 200px;
   }
 `;
 
