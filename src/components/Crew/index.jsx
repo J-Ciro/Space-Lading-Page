@@ -29,7 +29,7 @@ export const Crew = () => {
   return (
     <>
       <StylesCrew>
-        <NavBar />
+        {/* <NavBar /> */}
 
         <CarouselContainer>
           <Slider>
@@ -47,7 +47,7 @@ export const Crew = () => {
                   </DivMeetCrew>
                   <RolePerson>{person.role}</RolePerson>
                   <NamePerson>{person.name}</NamePerson>
-                  <BioPerson>{person.bio}</BioPerson>s
+                  <BioPerson>{person.bio}</BioPerson>
                   <DivBtnSlider className="static-buttons">
                     {crew.map((person, index) => (
                       <Btn
