@@ -178,6 +178,7 @@ export const StyledPageTitle = styled.h4`
 
 export const StyledSpanPage = styled.span`
   color: white;
+  font-family: 'Barlow Condensed';
   @media screen and (max-width: 768px){
   font-size: 1.25rem;
   letter-spacing: 3.38px;

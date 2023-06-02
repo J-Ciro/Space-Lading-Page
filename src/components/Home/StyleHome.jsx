@@ -5,6 +5,19 @@ export const SectionContent = styled.main`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    justify-content: center;
+    margin-top: 550px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 426px){
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    width:100vw;
+   
+  }
 `;
 
 export const Message1 = styled.p`
@@ -16,6 +29,17 @@ export const Message1 = styled.p`
   margin: 0;
   padding: 0;
   letter-spacing: 4.75px;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 426px){
+    font-size: 16px;
+  }
 `;
 
 export const Message2 = styled.p`
@@ -27,6 +51,23 @@ export const Message2 = styled.p`
   padding: 0;
   font-family: "Barlow Condensed";
   font-weight: 200;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 426px){
+    /* font-size: 20px; */
+    margin-top: 20px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: 400;
+    
+  }
 `;
 
 export const MessageSpace = styled.h1`
@@ -37,6 +78,18 @@ export const MessageSpace = styled.h1`
   color: white;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 426px){
+    font-size: 80px;
+    margin-top: 20px;
+  }
 `;
 
 export const StylesHome = styled.div`
@@ -46,18 +99,19 @@ export const StylesHome = styled.div`
   background-size: cover;
   width: 100%;
   height: 100vh;
+
   @media screen and (max-width: 768px){
     background-image: url(${(props) => props.backgroundImageTablet});
     background-repeat: no-repeat;
-    width:auto;
+    width: auto;
    
   }
   @media screen and (max-width: 426px){
     background-image: url(${(props) => props.backgroundImageMobile});
     background-repeat: no-repeat;
     background-size: cover;
-    height:auto;
-  
+    height: auto;
+    /* width: 500px; */
   }
 
 
@@ -85,7 +139,6 @@ export const StylesOuterCircle = styled.div`
   width: 27.125rem;
   height: 27.125rem;
   border-radius: 60%;
-  background-color: red;
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -130,6 +183,13 @@ export const StylesSpace = styled.div`
     flex-direction: column;
     margin-left:0px;
     margin-right: 0px;
+
+    & div{
+      /* justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 30px; */
+    }
   }
 
 `;

@@ -13,7 +13,12 @@ export const StyledList = styled.div`
   backdrop-filter: blur(30px);
   justify-content: space-around;
 
-  @media screen and (max-width: 768px) {
+  .list{
+    display:flex;
+    gap:5px;
+  }
+
+  @media screen and (max-width: 426px) {
     width: 450px;
     height: 96px;
     display: ${(props) => (props.open ? "block" : "none")};
@@ -57,14 +62,18 @@ export const StyledList = styled.div`
       height: 1%;
     }
     a {
-      display: flex;
+      
+      color: white;
+      text-decoration: none;
+      @media screen and (max-width: 426px) {
+        display: flex;
       width: 100%;
       padding-right: 83px;
       justify-content: flex-start;
       align-items: center;
       gap: 10px;
-      color: white;
-      text-decoration: none;
+    }
+      
     }
     .navNumber {
       color: white;
@@ -74,6 +83,7 @@ export const StyledList = styled.div`
       }
       @media screen and (max-width: 426px) {
       display: block;
+      margin-top: 3px;
     }
     }
 
@@ -97,8 +107,9 @@ export const StyledList = styled.div`
       mix-blend-mode: normal;
       cursor: pointer;
       @media screen and (max-width: 426px) {
-      border-bottom: 0;
-    }
+        border-bottom: 0px
+      }
+      
     }
   }
   .active {
@@ -133,7 +144,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
-    position: absolute;
+   
     width: 95vw;
     top: 0px;
   }
