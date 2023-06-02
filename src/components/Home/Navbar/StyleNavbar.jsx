@@ -13,7 +13,12 @@ export const StyledList = styled.div`
   backdrop-filter: blur(30px);
   justify-content: space-around;
 
-  @media screen and (max-width: 768px) {
+  .list{
+    display:flex;
+    gap:5px;
+  }
+
+  @media screen and (max-width: 426px) {
     width: 450px;
     height: 96px;
     display: ${(props) => (props.open ? "block" : "none")};
@@ -58,6 +63,7 @@ export const StyledList = styled.div`
     a {
       color: white;
       text-decoration: none;
+      
     }
     .navNumber {
       color: white;
@@ -86,6 +92,10 @@ export const StyledList = styled.div`
       border-bottom: solid 3px #ffffff;
       mix-blend-mode: normal;
       cursor: pointer;
+      @media screen and (max-width: 426px) {
+        border-bottom: 0px
+      }
+      
     }
   }
   .active {
@@ -97,6 +107,12 @@ export const StyledList = styled.div`
     transform: translateY(21px);
 
     @media screen and (max-width: 426px) {
+      border-right: solid 3px #8a8b90;
+      border-bottom:0px;
+      height:10%;
+      padding-right: 100%;
+      transform: translateY(0px);
+      
       
     }
   }
@@ -114,7 +130,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
-    position: absolute;
+   
     width: 95vw;
     top: 0px;
   }

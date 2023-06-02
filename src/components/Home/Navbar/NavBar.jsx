@@ -23,31 +23,39 @@ export const NavBar = () => {
       </figure>
 
       <StyledLine> </StyledLine>
-      
+
       <StyledList open={open}>
         <ul>
           <li>
             <NavLink to="/">
-              <span className="navNumber">00</span>
-              <span className="navName">HOME</span>
+              <div className="list">
+                <span className="navNumber">00</span>
+                <span className="navName">HOME</span>
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink to="/destination">
-              <span className="navNumber">01</span>
-              <span className="navName">DESTINATION</span>
+              <div className="list">
+                <span className="navNumber">01</span>
+                <span className="navName">DESTINATION</span>
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink to="/crew">
-              <span className="navNumber">02</span>
-              <span className="navName">CREW</span>
+              <div className="list">
+                <span className="navNumber">02</span>
+                <span className="navName">CREW</span>
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink to="/technology">
-              <span className="navNumber">03</span>
-              <span className="navName">TECHNOLOGY</span>
+              <div className="list">
+                <span className="navNumber">03</span>
+                <span className="navName">TECHNOLOGY</span>
+              </div>
             </NavLink>
           </li>
         </ul>

@@ -22,9 +22,9 @@ export const SliderItem = styled.div`
   /* Estilos para los elementos del slider */
   display: ${({ active }) => (active ? "flex" : "none")};
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   //justify-content: space-between;
-  width: 90%;
+  width: 100vw;
   height: 600px;
   margin: 0 auto;
   gap: 80px;
@@ -53,8 +53,8 @@ export const ContentText = styled.div`
 
   //Tablet
   @media screen and (max-width: 768px) {
-    width: 100%;
-    transform: translateY(-50px);
+    width: 100vw;
+    /* transform: translateY(-50px); */
   }
   @media screen and (max-width: 426px) {
     transform: translateY(-170px);
@@ -62,7 +62,7 @@ export const ContentText = styled.div`
 `;
 
 export const ImgCrew = styled.figure`
-  width: 568.07px;
+  /* width: 568.07px; */
   left: 734.93px;
 
   img {
@@ -124,7 +124,7 @@ export const RolePerson = styled.h3`
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 37px;
   text-transform: uppercase;
   width: 309px;
@@ -148,7 +148,7 @@ export const NamePerson = styled.h1`
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 3.5rem;
   line-height: 64px;
   width: 614px;
   height: 64px;
@@ -167,7 +167,7 @@ export const NamePerson = styled.h1`
 `;
 
 export const BioPerson = styled.p`
-  font-family: "Barlow";
+  font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -175,6 +175,7 @@ export const BioPerson = styled.p`
   line-height: 32px;
   width: 444px;
   height: 128px;
+  color:#D0D6F9;
 
   //Tablet
   @media screen and (max-width: 768px) {
@@ -194,10 +195,11 @@ export const BioPerson = styled.p`
 export const DivBtnSlider = styled.div`
   display: flex;
   gap: 20px;
-  width: 90%;
+  width: 20vw;
   height: 30px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  /* margin-top: 30px; */
 
   //Tablet
   @media screen and (max-width: 768px) {
@@ -268,6 +270,7 @@ export const MeetCrew = styled.h3`
     line-height: 24px;
     opacity: 0.5;
     margin-right: 10px;
+    
 
     //Tablet
     @media screen and (max-width: 768px) {
@@ -296,8 +299,8 @@ export const TitleMeetCrew = styled.h4`
 `;
 
 export const DivMeetCrew = styled.div`
-  margin-bottom: 60px;
-  margin-top: 5px;
+  margin-bottom: 80px;
+  margin-top: -40px;
 
   //Tablet
   @media screen and (max-width: 768px) {
@@ -312,7 +315,7 @@ export const DivMeetCrew = styled.div`
 
 export const CarouselContainer = styled.div`
   margin-top: 150px;
-  width: 90%;
+  width: 100vw;
   height: auto;
   margin: 0 auto;
   overflow: hidden;

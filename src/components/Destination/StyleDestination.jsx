@@ -73,7 +73,7 @@ export const StylesDestination = styled.div`
         color: #ffffff;
       }
       .description {
-        font-family: "Barlow", sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
         font-style: normal;
 
         font-size: 18px;
