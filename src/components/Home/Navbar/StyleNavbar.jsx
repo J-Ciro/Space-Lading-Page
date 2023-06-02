@@ -29,6 +29,7 @@ export const StyledList = styled.div`
     height: 100vh;
     width: 300px;
     left: 27%;
+    height: 110vh;
   }
 
   ul {
@@ -44,25 +45,34 @@ export const StyledList = styled.div`
       position: absolute;
       height: 667px;
       left: 121px;
-      top: 20%;
+      top: 24%;
       left: 15%;
     }
   }
   li {
     list-style: none;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: 2px solid transparent;
     font-weight: 700;
     letter-spacing: 2.7px;
     @media screen and (max-width: 426px) {
-      height: 0%;
+      height: 1%;
     }
     a {
+      
       color: white;
       text-decoration: none;
+      @media screen and (max-width: 426px) {
+        display: flex;
+      width: 100%;
+      padding-right: 83px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
       
     }
     .navNumber {
@@ -71,6 +81,10 @@ export const StyledList = styled.div`
       @media screen and (max-width: 768px) {
         display: none;
       }
+      @media screen and (max-width: 426px) {
+      display: block;
+      margin-top: 3px;
+    }
     }
 
     .navName {
@@ -89,7 +103,7 @@ export const StyledList = styled.div`
       }
     }
     &:hover {
-      border-bottom: solid 3px #ffffff;
+      border-bottom: solid 3px #8a8b90;
       mix-blend-mode: normal;
       cursor: pointer;
       @media screen and (max-width: 426px) {
@@ -100,22 +114,22 @@ export const StyledList = styled.div`
   }
   .active {
     //  border-bottom: 2px solid white;
-    border-bottom: solid 3px #8a8b90;
+    border-bottom: solid 3px  #ffffff;
     mix-blend-mode: normal;
     cursor: pointer;
     padding-bottom: 35px;
     transform: translateY(21px);
-
+    
     @media screen and (max-width: 426px) {
-      border-right: solid 3px #8a8b90;
-      border-bottom:0px;
-      height:10%;
-      padding-right: 100%;
-      transform: translateY(0px);
-      
+      border-bottom: 0;
+      border-right: solid 3px #ffffff;
+      padding-bottom: 0;
+      margin-bottom: 35px;
       
     }
+    
   }
+  
 `;
 
 export const StyledNav = styled.nav`
@@ -135,7 +149,7 @@ export const StyledNav = styled.nav`
     top: 0px;
   }
   @media screen and (max-width: 426px) {
-    width: 93vw;
+    width: 92vw;
   }
 
   img {

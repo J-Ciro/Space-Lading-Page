@@ -29,7 +29,7 @@ export const Crew = () => {
   return (
     <>
       <StylesCrew>
-        <NavBar />
+        {/* <NavBar /> */}
 
         <CarouselContainer>
           <Slider>
